@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Go Nom Nom</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="assets/app.css"/>
+    <link rel="stylesheet" href="assets/custom.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body class="bodyBg" ng-app="starterApp" layout="column">
+
+<div class="header" layout="row">
+
+
+    <nav flex class="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" style="height: 45px;" src="logo.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="restaurants.html">All Restraunts</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+</div>
+
+<div flex layout-wrap layout="column" tabIndex="-1" role="main" layout-align="center center" class="searchBox">
+
+
+    <div flex layout-fill layout="column" layout-align="start start" class="searchOverlay">
+
+
+        <md-content flex="10" layout-fill layout-padding class="searchContainer" layout-align="start end">
+            <form name="userForm">
+
+                <div layout layout-sm="row">
+                    <md-input-container flex="30" md-no-float>
+                        <input style="color:white;background:
+rgba(237, 237, 237, 0.32)" ng-model="user.firstName" placeholder="Where's your couch at?">
+                    </md-input-container>
+                    <md-input-container md-no-float>
+                        <md-button style="margin: 0px;border: 1px solid white; border-radius: 0px; color: white;"
+                                   class="md-primary" ng-href="{{googleUrl}}" target="_blank">Search
+                        </md-button>
+                    </md-input-container>
+                </div>
+
+            </form>
+        </md-content>
+        <div flex="10" layout-fill layout="row" layout-align="start start" class="resultHeader">
+            <h1 flex class="resultHeaderText">234 restraunts in your area</h1>
+
+        </div>
+
+        <div flex layout-fill layout="column" layout-align="start start" class="results scrollbar" id="ex3">
+
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+            <div flex="10" layout="column" class="result">
+                <ul style="list-style-type: none" flex>
+                    <li><b>Southy</b> (South Indian)</li>
+                    <li>11 B, Hauj Khas, New Delhi</li>
+                    <li>4.0</li>
+                    <li>Cost for 2 > Rs. 400</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.js"></script>
+<script src="./bower_components/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="./bower_components/angular-material/angular-material.js"></script>
+
+
+<script type="text/javascript">
+
+    angular
+            .module('starterApp', ['ngMaterial'])
+            .config(function ($mdThemingProvider, $mdIconProvider) {
+
+                $mdIconProvider
+                        .defaultIconSet("./assets/svg/avatars.svg", 128)
+                        .icon("menu", "./assets/svg/menu.svg", 24)
+                        .icon("share", "./assets/svg/share.svg", 24)
+                        .icon("google_plus", "./assets/svg/google_plus.svg", 512)
+                        .icon("hangouts", "./assets/svg/hangouts.svg", 512)
+                        .icon("twitter", "./assets/svg/twitter.svg", 512)
+                        .icon("phone", "./assets/svg/phone.svg", 512);
+
+                $mdThemingProvider.theme('default')
+                        .primaryPalette('lime', {
+                            'default': '400',
+                            'hue-1': '50',
+                            'hue-2': '600',
+                            'hue-3': 'A100'
+                        })
+                        .accentPalette('red');
+
+            });
+
+
+</script>
+
+</body>
+</html>

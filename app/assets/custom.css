@@ -1,0 +1,253 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.navigation a{
+    margin-right: 15px;
+}
+.customButton {
+    color: black;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.customButton:not([disabled]):hover {
+    color: red;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+
+}
+
+.customButton:focus {
+    color: red;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+}
+
+.bodyBg {
+    
+
+}
+
+.bannerText {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+}
+
+.banner {
+    /*  background: url("banner.jpg");*/
+}
+
+.header {
+
+    background: url("bg.png");
+    background-color: transparent;
+
+}
+
+.slogan {
+    /*margin: 2% 6% 2% 6%;*/
+    
+    background:url(main_background_txt1.png) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    padding: 4% 0;
+    /*animation: stripes 6s linear infinite;~*/
+}
+@-webkit-keyframes stripes {
+    0%{
+        background-position: -0px 0%;    
+    }
+    50%{
+        background-position: -20px 0%;
+  }
+  100%{
+        background-position: -0px 0%; 
+  }
+}
+.slogan .phone{
+  width: 64%;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+.slogan h1{
+    font-size: 77px;
+    text-shadow: 2px 4px 6px #000;
+    margin: 0;
+}
+.slogan h2{
+    font-size: 20px;
+}
+.points{
+    background-color: #fff;
+}
+.points h2{
+    font-size: 25px;
+}
+.points p{
+    margin: 0 3px;
+    line-height: 20px;
+}
+.points img{
+    height: 117px;
+}
+.nomnomPoints{
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.nomnomPoints .row{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.nomnomPoints img{
+    height: 117px;
+}
+footer{
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 48px;
+    line-height: 48px;
+    text-align: center;
+    bottom: 0;
+}
+footer input{
+    height: 30px;
+    vertical-align: middle;
+    width: 225px;
+    margin-left: 10px;
+    line-height: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid orange;
+    background-color: #F4F4F4;
+    padding-left: 8px;
+}
+footer .button{
+
+    color: #fff;
+    padding: 3px 15px;
+    line-height: 22px;
+    min-height: 22px;
+    margin: 3px 6px;
+}
+.menudemoBasicUsage .md-menu-demo {
+    padding: 24px;
+}
+
+.menudemoBasicUsage .menu-demo-container {
+    min-height: 200px;
+}
+
+.searchBox {
+    background: url("map.png");
+
+}
+
+.searchOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.searchContainer {
+    background: transparent;
+    padding: 2% 6% 0% 6%;
+
+}
+
+.searchInput {
+    background: rgba(149, 149, 149, 0.76) !important;
+
+}
+
+.resultHeader {
+    color: white;
+    padding: 0% 6% 0% 6%;
+
+}
+
+.resultHeaderText {
+    border-bottom: 1px solid white;
+    padding-bottom: 2%
+}
+
+.navbar-default {
+    border: none !important;
+}
+
+.navbar-inner {
+    background: transparent;
+}
+
+.navbar-nav > li > a {
+    color: black;
+    background: transparent !important;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav > li > a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+.navbar-nav > .active>a {
+    color: red;
+    border-bottom: 2px solid red;
+
+}
+.navbar-nav > .active > a{
+    color: red;
+    /*border-bottom: 2px solid red;*/
+
+}
+
+.results {
+    color: white;
+    padding: 0% 6% 0% 6%;
+
+}
+
+.scrollbar {
+
+    overflow-y: scroll;
+
+}
+
+.content {
+    height: 450px;
+}
+
+#ex3::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+#ex3::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+}
+
+#ex3::-webkit-scrollbar-thumb:active {
+    background-color: #FFFFFF;
+}
+
+#ex3::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+.result {
+
+}
+@media screen and (max-width: 800px) {
+    footer{
+        position: relative;
+    }
+    .slogan h1{
+        font-size: 59px;
+    }
+    .slogan h2{
+        font-size: 16px;
+    }
+}
