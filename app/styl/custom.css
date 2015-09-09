@@ -40,7 +40,7 @@ body{
 
 .header {
 
-    background: url("bg.png");
+    background: url("../img/bg.png");
     background-color: transparent;
 
 }
@@ -48,7 +48,7 @@ body{
 .slogan {
     /*margin: 2% 6% 2% 6%;*/
     
-    background:url(main_background_txt1.png) no-repeat center center;
+    background:url(../img/main_background_txt1.png) no-repeat center center;
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
@@ -144,7 +144,7 @@ footer .button{
 }
 
 .searchBox {
-    background: url("map.png");
+    background: url("../img/map.png");
 
 }
 

@@ -1,0 +1,58 @@
+<div layout="column" class="mainDiv">
+<div layout layout-sm="column">
+        <md-input-container flex="70">
+          <label>Filters</label>
+          <input ng-model="searchText" ng-keyup="showme=true">
+          <div class="filteredProducts row" ng-show="showme && searchText.length">   
+          <md-list>
+          <md-list-item ng-repeat="innerList in list  | filter:searchText">
+            <div class="md-list-item-text">
+              <span>{{innerList.name}}</span>
+              <md-button ng-disabled="true" class="md-raised md-primary chips filterBtn">{{innerList.type}}</md-button>
+              <span ng-show="innerList.options">
+
+                  <md-button ng-repeat="value in innerList.options" class="md-raised md-warn filterBtn">
+                  {{value}}
+                  </md-button>
+                
+                </span>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+          </md-list-item>
+        </md-list>   
+        </div>
+        </md-input-container>
+        <md-input-container flex="30">
+          <label>Location</label>
+          <input>
+        </md-input-container>
+</div>
+<div layout="column">
+  
+</div>
+<div layout="row" flex>
+    <md-list flex>
+      <md-list-item class="categories">
+        <div flex="20">Category One</div>
+        <div flex="80" class="categoriesOuter">
+          <md-button class="md-raised">Button</md-button>
+          <md-button class="md-raised">Button</md-button>
+        </div>
+      </md-list-item>
+      <md-list-item class="categories">
+        <div flex="20">Category Two</div>
+        <div flex="80" class="categoriesOuter">
+          <md-button class="md-raised">Button</md-button>
+          <md-button class="md-raised">Button</md-button>
+        </div>
+      </md-list-item>
+      <md-list-item class="categories">
+        <div flex="20">Category Three</div>
+        <div flex="80" class="categoriesOuter">
+          <md-button class="md-raised">Button</md-button>
+          <md-button class="md-raised">Button</md-button>
+        </div>
+      </md-list-item>
+    </md-list>
+</div>
+</div>

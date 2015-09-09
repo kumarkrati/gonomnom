@@ -1,0 +1,95 @@
+<md-sidenav md-component-id="left" layout="column"
+  class="md-sidenav-left md-whiteframe-z2 leftSideNav blackColorTheme" md-is-locked-open="$mdMedia('gt-sm')"
+  tabindex="-1" style="display:block; "
+>
+ <md-content layout="row" layout-padding role="navigation" class="md-default-theme" ng-controller="nav">
+  <div flex="20">
+    <md-button class="md-fab md-mini numberOfCalls">
+            3
+        </md-button>
+  </div>
+  <div flex ="65" layout="column" layout-align="start start" class="userDetails">
+  	
+  <h3 class="md-subhead">Kumar Krati</h3>
+  <p class="md-subhead">8787XXXXX</p>
+  </div>
+  <div flex ="15" class="noPadding">
+    <md-button ng-href="#" class="editBtn">Edit</md-button>
+  </div>
+  </md-content>
+   <md-divider></md-divider>
+  <md-content  layout="column" layout-padding role="navigation" class="md-default-theme" ng-controller="nav">
+   <md-list flex="100" class="noPadding">
+    <md-subheader class="md-no-sticky">Address(3)</md-subheader>
+	      <md-list-item class="active">
+	    	<p>Hauz Khas</p>
+	      	</md-list-item>
+	      <md-list-item >
+	    	<p>Green Park</p>
+	      </md-list-item>
+        <md-list-item >
+        <p>Lodhi Garden</p>
+        </md-list-item>
+   </md-list>
+   <div flex="100" layout="column" layout-align="center end" class="noPadding">
+   	<md-button ng-href="#" class="leftSideWhiteBtn">Add New</md-button>
+   </div>
+  </md-content>
+  <md-divider></md-divider>
+  <md-content  layout="column" layout-padding role="navigation" class="md-default-theme" ng-controller="nav">
+   <md-list flex="100" class="noPadding menuList">
+    <md-subheader class="md-no-sticky highlight" layout="row" layout-wrap flex>
+    <span flex="70">Cart</span>
+      <span flex="30" class="amount">&#x20B9 320
+        <md-select placeholder="^" ng-model="someVal" class="highlight">
+        <md-option value="1">Bill Amount - 220</md-option>
+        <md-option value="7">S.Tax @12.5</md-option>
+      </md-select>
+      </span>
+    </md-subheader>
+    
+    <md-chips>
+    <md-chip class="noMargin">Chawla Chicken</md-chip>
+	</md-chips>
+	      <md-list-item>
+	    	<p>Appetisers</p>
+        <md-button ng-href="#" class="leftSideDarkBtn">Open Menu</md-button>
+	     	</md-list-item>
+	      <md-list-item >
+	    	<p>Starters</p>
+        <md-button ng-href="#" class="leftSideDarkBtn">Open Menu</md-button>
+	      </md-list-item>
+        <md-list flex="100" class="noPadding mainCourse">
+          <md-subheader class="md-no-sticky">Main Course</md-subheader>
+              <md-list-item>
+              <p>1/2 Kadai Chicken</p>
+              <div layout="row" layout-align="center center" class="quantity">
+                <div>+</div>
+                <div>100</div>
+                <div>-</div>
+              </div>
+              </md-list-item>
+              <md-list-item >
+              <p>4 Rotis</p>
+              <div layout="row" layout-align="center center" class="quantity">
+                <div>+</div>
+                <div>100</div>
+                <div>-</div>
+              </div>  
+              </md-list-item>
+         </md-list>
+         <md-list-item>
+          <p>Desserts</p>
+          <md-button ng-href="#" class="leftSideDarkBtn">Open Menu</md-button>
+          </md-list-item>
+          <md-list-item >
+          <p>Beverages</p>
+          <md-button ng-href="#" class="leftSideDarkBtn">Open Menu</md-button>
+          </md-list-item>
+   </md-list>
+  </md-content>
+  <div layout="row" class="placeOrder" layout-align="end end">
+    <md-button class="md-raised placeOrderBtn">PLace Order</md-button>
+   </div>
+</md-sidenav>
+
